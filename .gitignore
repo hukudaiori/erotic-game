@@ -1,0 +1,24 @@
+# Unity関連の不要ファイルを無視する
+
+# Library, Logs, Temp, obj, *.csproj, *.unityproj, *.sln, *.suo, *.tmp, *.user, *.userprefs, *.pidb, *.booproj
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uilds/
+[Bb]uild/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+
+# VS Code関連
+.vscode/
+
+# macOS関連
+.DS_Store
+
+# Windows関連
+Thumbs.db
+Desktop.ini
+
+# Git管理に不要なInkファイルのキャッシュ
+*.ink.json

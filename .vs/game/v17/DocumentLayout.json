@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\tsumugi\\game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|c:\\users\\tsumugi\\game\\assets\\inkmanagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|C:\\Users\\tsumugi\\game\\assets\\inkmanagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|solutionrelative:assets\\inkmanagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tsumugi\\game\\Library\\PackageCache\\com.inkle.ink-unity-integration@2b6b4fc41b04\\Editor\\Tools\\Ink Inspector\\InkInspector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.inkle.ink-unity-integration@2b6b4fc41b04\\Editor\\Tools\\Ink Inspector\\InkInspector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tsumugi\\game\\Library\\PackageCache\\com.inkle.ink-unity-integration@2b6b4fc41b04\\Editor\\Core\\Ink Library\\InkCompilerLog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.inkle.ink-unity-integration@2b6b4fc41b04\\Editor\\Core\\Ink Library\\InkCompilerLog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tsumugi\\game\\Library\\PackageCache\\com.unity.ugui@9496653a3df6\\Runtime\\TMP\\TMP_PackageResourceImporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,19 +26,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InkManagar.cs",
-              "DocumentMoniker": "C:\\Users\\tsumugi\\game\\Assets\\InkManagar.cs",
-              "RelativeDocumentMoniker": "Assets\\InkManagar.cs",
-              "ToolTip": "C:\\Users\\tsumugi\\game\\Assets\\InkManagar.cs",
-              "RelativeToolTip": "Assets\\InkManagar.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "InkInspector.cs",
+              "DocumentMoniker": "C:\\Users\\tsumugi\\game\\Library\\PackageCache\\com.inkle.ink-unity-integration@2b6b4fc41b04\\Editor\\Tools\\Ink Inspector\\InkInspector.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.inkle.ink-unity-integration@2b6b4fc41b04\\Editor\\Tools\\Ink Inspector\\InkInspector.cs",
+              "ToolTip": "C:\\Users\\tsumugi\\game\\Library\\PackageCache\\com.inkle.ink-unity-integration@2b6b4fc41b04\\Editor\\Tools\\Ink Inspector\\InkInspector.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.inkle.ink-unity-integration@2b6b4fc41b04\\Editor\\Tools\\Ink Inspector\\InkInspector.cs",
+              "ViewState": "AgIAAKQBAAAAAAAAAAAYwMcBAABtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T13:35:51.557Z",
+              "WhenOpened": "2025-03-19T15:00:45.308Z",
               "EditorCaption": ""
             },
             {
@@ -39,7 +47,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "InkCompilerLog.cs",
+              "DocumentMoniker": "C:\\Users\\tsumugi\\game\\Library\\PackageCache\\com.inkle.ink-unity-integration@2b6b4fc41b04\\Editor\\Core\\Ink Library\\InkCompilerLog.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.inkle.ink-unity-integration@2b6b4fc41b04\\Editor\\Core\\Ink Library\\InkCompilerLog.cs",
+              "ToolTip": "C:\\Users\\tsumugi\\game\\Library\\PackageCache\\com.inkle.ink-unity-integration@2b6b4fc41b04\\Editor\\Core\\Ink Library\\InkCompilerLog.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.inkle.ink-unity-integration@2b6b4fc41b04\\Editor\\Core\\Ink Library\\InkCompilerLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T14:16:00.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InkManagar.cs",
+              "DocumentMoniker": "C:\\Users\\tsumugi\\game\\Assets\\InkManagar.cs",
+              "RelativeDocumentMoniker": "Assets\\InkManagar.cs",
+              "ToolTip": "C:\\Users\\tsumugi\\game\\Assets\\InkManagar.cs",
+              "RelativeToolTip": "Assets\\InkManagar.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAmwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T13:35:51.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TMP_PackageResourceImporter.cs",
               "DocumentMoniker": "C:\\Users\\tsumugi\\game\\Library\\PackageCache\\com.unity.ugui@9496653a3df6\\Runtime\\TMP\\TMP_PackageResourceImporter.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@9496653a3df6\\Runtime\\TMP\\TMP_PackageResourceImporter.cs",
@@ -47,8 +81,7 @@
               "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui@9496653a3df6\\Runtime\\TMP\\TMP_PackageResourceImporter.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAAAB0AAADZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T13:27:33.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T13:27:33.745Z"
             }
           ]
         }

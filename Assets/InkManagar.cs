@@ -8,9 +8,8 @@ public class InkManager : MonoBehaviour
 {
     public TextAsset inkJSONAsset;
     public TMP_Text dialogueText;
-    public Button nextButton;
-    public GameObject choicesContainer; // 選択肢を表示するパネル
-    public Button choiceButtonPrefab; // 選択肢のボタン
+    public GameObject choicesContainer; // パネル
+    public Button choiceButtonPrefab;   // プレハブ
 
     private Story story;
     private List<Button> choiceButtons = new List<Button>();
@@ -25,55 +24,62 @@ public class InkManager : MonoBehaviour
 
         story = new Story(inkJSONAsset.text);
         DisplayNextLine();
-        nextButton.onClick.AddListener(DisplayNextLine);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return) ||
+            Input.GetKeyDown(KeyCode.Space) ||
+            Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            if (!choicesContainer.activeSelf)
+                DisplayNextLine();
+        }
     }
 
     void DisplayNextLine()
     {
         if (story.canContinue)
         {
-            // 通常のテキストを表示
             dialogueText.text = story.Continue();
-            nextButton.gameObject.SetActive(true);
-            choicesContainer.SetActive(false); // 選択肢を非表示
+            ClearChoices();
         }
         else if (story.currentChoices.Count > 0)
         {
-            // 選択肢がある場合
-            nextButton.gameObject.SetActive(false);
             DisplayChoices();
-        }
-        else
-        {
-            // 物語が終了したらボタンを非表示
-            nextButton.gameObject.SetActive(false);
         }
     }
 
     void DisplayChoices()
     {
-        // 既存の選択肢ボタンを削除
-        foreach (Button btn in choiceButtons)
-        {
-            Destroy(btn.gameObject);
-        }
-        choiceButtons.Clear();
+        ClearChoices();
 
-        // 選択肢を作成
         choicesContainer.SetActive(true);
-        for (int i = 0; i < story.currentChoices.Count; i++)
+
+        foreach (Choice choice in story.currentChoices)
         {
-            Choice choice = story.currentChoices[i];
             Button choiceButton = Instantiate(choiceButtonPrefab, choicesContainer.transform);
-            choiceButton.GetComponentInChildren<TMP_Text>().text = choice.text;
-            choiceButton.onClick.AddListener(() => ChooseChoice(choice.index));
+            TMP_Text choiceText = choiceButton.GetComponentInChildren<TMP_Text>();
+            choiceText.text = choice.text.Trim();
+
+            int choiceIndex = choice.index;
+            choiceButton.onClick.AddListener(() =>
+            {
+                story.ChooseChoiceIndex(choiceIndex);
+                DisplayNextLine();
+            });
+
             choiceButtons.Add(choiceButton);
         }
     }
 
-    void ChooseChoice(int choiceIndex)
+    void ClearChoices()
     {
-        story.ChooseChoiceIndex(choiceIndex);
-        DisplayNextLine();
+        foreach (Button button in choiceButtons)
+        {
+            Destroy(button.gameObject);
+        }
+        choiceButtons.Clear();
+        choicesContainer.SetActive(false);
     }
 }
